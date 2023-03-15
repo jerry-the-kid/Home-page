@@ -20,7 +20,7 @@
         id="menu"
         src="./images/icon-menu.svg"
         alt="Hamburger"
-        class="h-5 cursor-pointer hidden md:block"
+        class="h-5 cursor-pointer hidden md:block sm:h-4"
       />
       <ul class="flex space-x-8 text-darkGrayishBlue md:hidden">
         <li class="cursor-pointer">Home</li>
@@ -148,22 +148,20 @@
       </div>
     </footer>
     <div id="overlay" class="absolute inset-0 z-10 hidden"></div>
-    <div id="menu-tab" class="">
-      <div class="modal-content bg-offWhite">
-        <img
-          src="./images/icon-menu-close.svg"
-          alt="Close"
-          class="h-7 ml-auto cursor-pointer"
-          id="close"
-        />
-        <ul class="space-y-6 mt-16 text-lg">
-          <li class="cursor-pointer">Home</li>
-          <li class="cursor-pointer">New</li>
-          <li class="cursor-pointer">Popular</li>
-          <li class="cursor-pointer">Trending</li>
-          <li class="cursor-pointer">Categories</li>
-        </ul>
-      </div>
+    <div id="menu-tab" class="overflow-hidden hidden md:block">
+      <img
+        src="./images/icon-menu-close.svg"
+        alt="Close"
+        class="h-7 absolute cursor-pointer top-8 right-9 sm:h-5"
+        id="close"
+      />
+      <ul class="space-y-6 absolute mt-16 text-lg top-12 left-12">
+        <li class="cursor-pointer">Home</li>
+        <li class="cursor-pointer">New</li>
+        <li class="cursor-pointer">Popular</li>
+        <li class="cursor-pointer">Trending</li>
+        <li class="cursor-pointer">Categories</li>
+      </ul>
     </div>
   </body>
   <script>
